@@ -11,66 +11,79 @@ Tags: responsive-layout, custom-colors, custom-header, custom-menu, editor-style
 Text Domain: baby-store
 */
 
-/*!* Reset default browser styles *!*/
-/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    border: 0;*/
-/*    font-size: 100%;*/
-/*    font: inherit;*/
-/*    vertical-align: baseline;*/
-/*}*/
+/* Reset default browser styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-/*!* Global Styles *!*/
-/*body {*/
-/*    font-family: Arial, sans-serif;*/
-/*    font-size: 16px;*/
-/*    line-height: 1.6;*/
-/*    background-color: #f4f4f4;*/
-/*    color: #333;*/
-/*}*/
+/* Global Styles */
+body {
+    font-family: Jost, sans-serif !important;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-/*.container {*/
-/*    width: 80%;*/
-/*    margin: 0 auto;*/
-/*    padding: 20px;*/
-/*}*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-/*!* Header Styles *!*/
-/*.header {*/
-/*    background-color: #333;*/
-/*    color: #fff;*/
-/*    padding: 20px;*/
-/*    text-align: center;*/
-/*}*/
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
-/*.header h1 {*/
-/*    font-size: 2em;*/
-/*}*/
+.header h1 {
+    font-size: 2em;
+}
 
-/*!* Navigation Styles *!*/
-/*.nav-menu {*/
-/*    list-style: none;*/
-/*    padding: 0;*/
-/*    margin: 20px 0;*/
-/*    text-align: center;*/
-/*}*/
+/* Navigation Styles */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
 
-/*.nav-menu li {*/
-/*    display: inline-block;*/
-/*    margin-right: 20px;*/
-/*}*/
+.nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
 
-/*.nav-menu li a {*/
-/*    color: #fff;*/
-/*    text-decoration: none;*/
-/*    font-weight: bold;*/
-/*}*/
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-/*!* Footer Styles *!*/
-/*.footer {*/
-/*    background-color: #333;*/
-/*    color: #fff;*/
-/*    padding: 20px;*/
-/*    text-align: center;*/
-/*}*/
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23EABD90' viewBox='0 0 16 16'%3E%3Cpath d='M11.854 0l-.353.353-8.5 8.5a.5.5 0 0 0 0 .707l8.5 8.5.353.353.707-.707a.5.5 0 0 0 0-.707L4.707 8l8.854-8.854a.5.5 0 0 0 0-.707l-.707-.707L11.854 0zm0 0'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23EABD90' viewBox='0 0 16 16'%3E%3Cpath d='M4.146 16l.353-.353 8.5-8.5a.5.5 0 0 0 0-.707l-8.5-8.5-.353-.353-.707.707a.5.5 0 0 0 0 .707L11.293 8l-8.854 8.854a.5.5 0 0 0 0 .707l.707.707L4.146 16zM4.146 16zm0 0'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #EABD90 !important;
+}
