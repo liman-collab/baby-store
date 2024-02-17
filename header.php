@@ -25,6 +25,7 @@ if (function_exists('wp_body_open')) {
 ?>
 
 <div id="page" class="site">
+<!--    <div class="bg-dark justify-content-center align-items-center d-flex p-2"><span class="text-light">28:25:68s Gift Cards</span></div>-->
     <header id="masthead" class="site-header" role="banner">
         <?php get_template_part('template-parts/header/nav'); ?>
     </header>

@@ -33,10 +33,12 @@ class Assets
         wp_register_style('style-css', get_stylesheet_uri(), [], filemtime(BABY_STORE_DIR_PATH . '/style.css'), 'all');
         wp_register_style('bootstrap-css', BABY_STORE_DIR_URI . '/assets/src/lib/css/bootstrap.css', [], false, 'all');
         wp_register_style('font-css', BABY_STORE_DIR_URI . '/assets/src/lib/fonts/font.css', [], false, 'all');
+        wp_register_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css', [], false, 'all');
 
         wp_enqueue_style('style-css');
         wp_enqueue_style('bootstrap-css');
         wp_enqueue_style('font-css');
+        wp_enqueue_style('font-awesome');
     }
 
     public function register_scripts()
@@ -44,8 +46,14 @@ class Assets
         wp_register_script('main-js', BABY_STORE_DIR_URI . '/assets/js/main.js', [], filemtime(BABY_STORE_DIR_PATH . '/assets/js/main.js'), true);
         wp_register_script('bootstrap-js', BABY_STORE_DIR_URI . '/assets/src/lib/js/bootstrap.js', ['jquery'], false, true);
 
+
         wp_enqueue_script('main-js');
         wp_enqueue_script('bootstrap-js');
+
+        wp_localize_script('main-js', 'ajax_object', array(
+            'ajax_url' => admin_url('admin-ajax.php'),
+            // Add more data as needed
+        ));
     }
 
 }

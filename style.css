@@ -87,3 +87,44 @@ body {
 .carousel-indicators [data-bs-target]{
     background-color: #EABD90 !important;
 }
+
+.custom_card {
+    position: relative; /* Ensure position is relative for absolutely positioned pseudo-element */
+    overflow: hidden; /* Ensure the overflow is hidden to contain the scaled image */
+}
+
+.custom_card img {
+    transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+.custom_card:hover img {
+    transform: scale(1.1); /* Zoom in the image by 10% when hovered */
+}
+
+.custom_card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure the pseudo-element is behind the card */
+    border: dashed transparent;
+    border-width: 1px;
+    animation: dash 2s infinite linear;
+}
+
+.custom_card:hover::after {
+    box-shadow: 0 0 0 3px #EABD90;
+    border-color: #EABD90;
+    animation: none; /* Stop the animation when hovered */
+}
+
+.custom_card:hover{
+    border: dashed !important;
+    border-width: 1px !important;
+    border: 1px solid #eae3de !important;
+    border-radius: 20px;
+    transition: border-color .2s ease-out;
+    cursor: pointer;
+}

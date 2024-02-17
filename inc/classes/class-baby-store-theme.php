@@ -16,6 +16,7 @@ class BABY_STORE_THEME
     protected function __construct()
     {
         Assets::get_instance();
+        Ajax::get_instance();
 
         $this->setup_hooks();
     }
